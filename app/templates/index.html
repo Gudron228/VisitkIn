@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<h1>VisitkIn</h1>
+<p><a href="https://play.google.com/store/games?hl=ru&gl=US&pli=1">Загрузить из Google play</a></p>
+<form action="/index" method="post" novalidate>
+           {{ form.hidden_tag() }}
+    <p>{{ form.down() }}</p>
+    </form>
+{% endblock %}
